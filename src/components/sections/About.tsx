@@ -56,7 +56,7 @@ const About = () => {
 
   const testimonials = [
     {
-      quote: "FrappeFlow has revolutionized how we deploy and manage ERPNext instances for our clients. What used to take days now takes minutes.",
+      quote: "Fineto has revolutionized how we deploy and manage ERPNext instances for our clients. What used to take days now takes minutes.",
       author: "Sarah Johnson",
       position: "CTO, TechSolutions Inc."
     },
@@ -66,7 +66,7 @@ const About = () => {
       position: "IT Director, Global Manufacturing"
     },
     {
-      quote: "As a Frappe partner, FrappeFlow has been a game-changer for our business. We can now serve more clients with less overhead.",
+      quote: "As a Frappe partner, Fineto has been a game-changer for our business. We can now serve more clients with less overhead.",
       author: "Priya Sharma",
       position: "Founder, ERPExperts"
     }
@@ -97,13 +97,13 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Our Story</h3>
             <p className="text-muted-foreground mb-4">
-              FrappeFlow was born from our own frustrations managing multiple Frappe deployments across different environments. We saw firsthand how much time and resources were being spent on repetitive tasks that could be automated.
+              Fineto was born from our own frustrations managing multiple Frappe deployments across different environments. We saw firsthand how much time and resources were being spent on repetitive tasks that could be automated.
             </p>
             <p className="text-muted-foreground mb-4">
               In 2021, we set out to build the tool we wished we had – a comprehensive platform that would take the complexity out of deploying and managing Frappe applications.
             </p>
             <p className="text-muted-foreground mb-6">
-              Today, FrappeFlow is used by partners and businesses around the world to deploy, manage, and scale their Frappe and ERPNext environments with unprecedented ease and efficiency.
+              Today, Fineto is used by partners and businesses around the world to deploy, manage, and scale their Frappe and ERPNext environments with unprecedented ease and efficiency.
             </p>
             <CustomButton to="/about" variant="outline">
               Learn More About Us
@@ -111,18 +111,11 @@ const About = () => {
           </div>
           <div className="relative">
             <div className="aspect-square bg-secondary rounded-2xl overflow-hidden">
-              {/* Placeholder for team image */}
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-background">
-                <div className="text-center p-8">
-                  <div className="inline-block p-4 rounded-full bg-primary/10 mb-4">
-                    <Users size={48} className="text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Our Team</h3>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Frappe experts passionate about automation
-                  </p>
-                </div>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" 
+                alt="Our Team"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-6 -right-6 w-2/3 h-2/3 bg-primary/10 rounded-2xl -z-10"></div>
           </div>
@@ -133,7 +126,7 @@ const About = () => {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h3 className="text-2xl font-bold mb-4">Our Values</h3>
             <p className="text-muted-foreground">
-              These core principles guide everything we do at FrappeFlow.
+              These core principles guide everything we do at Fineto.
             </p>
           </div>
 
@@ -155,7 +148,7 @@ const About = () => {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h3 className="text-2xl font-bold mb-4">What Our Clients Say</h3>
             <p className="text-muted-foreground">
-              Don&apos;t just take our word for it. Here&apos;s what our clients have to say about FrappeFlow.
+              Don&apos;t just take our word for it. Here&apos;s what our clients have to say about Fineto.
             </p>
           </div>
 
