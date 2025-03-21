@@ -51,11 +51,11 @@ const PricingPage = () => {
   const faqs = [
     {
       question: 'Can I switch plans later?',
-      answer: 'Yes! You can upgrade or downgrade your plan at any time. When upgrading, you'll be billed the prorated difference immediately. When downgrading, the new rate will apply at the start of your next billing cycle.'
+      answer: 'Yes! You can upgrade or downgrade your plan at any time. When upgrading, you\'ll be billed the prorated difference immediately. When downgrading, the new rate will apply at the start of your next billing cycle.'
     },
     {
       question: 'What happens if I exceed my plan limits?',
-      answer: 'We'll notify you when you approach your plan limits. If you exceed them, we won't cut off your service, but we will reach out to discuss upgrading to a more suitable plan for your needs.'
+      answer: 'We\'ll notify you when you approach your plan limits. If you exceed them, we won\'t cut off your service, but we will reach out to discuss upgrading to a more suitable plan for your needs.'
     },
     {
       question: 'Do you offer a free trial?',
@@ -67,7 +67,7 @@ const PricingPage = () => {
     },
     {
       question: 'Can I cancel anytime?',
-      answer: 'Yes, you can cancel your subscription at any time. You'll continue to have access to your plan features until the end of your current billing cycle.'
+      answer: 'Yes, you can cancel your subscription at any time. You\'ll continue to have access to your plan features until the end of your current billing cycle.'
     },
     {
       question: 'Do you offer custom plans for larger organizations?',

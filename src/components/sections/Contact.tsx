@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { CustomCard } from '../ui/CustomCard';
 import CustomButton from '../ui/CustomButton';
@@ -69,7 +68,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      description: 'Drop us an email and we'll get back to you within 24 hours.',
+      description: 'Drop us an email and we\'ll get back to you within 24 hours.',
       value: 'contact@frappeflow.com',
       link: 'mailto:contact@frappeflow.com',
     },
