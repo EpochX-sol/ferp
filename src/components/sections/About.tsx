@@ -35,7 +35,7 @@ const About = () => {
     {
       icon: Lightbulb,
       title: 'Innovation',
-      description: 'We constantly push the boundaries of what's possible in Frappe deployment automation.'
+      description: 'We constantly push the boundaries of what\'s possible in Frappe deployment automation.'
     },
     {
       icon: Users,
@@ -45,12 +45,12 @@ const About = () => {
     {
       icon: Target,
       title: 'Efficiency',
-      description: 'We're obsessed with making Frappe deployment and management as streamlined as possible.'
+      description: 'We\'re obsessed with making Frappe deployment and management as streamlined as possible.'
     },
     {
       icon: Award,
       title: 'Quality',
-      description: 'We're committed to delivering reliable, secure, and high-performance solutions.'
+      description: 'We\'re committed to delivering reliable, secure, and high-performance solutions.'
     }
   ];
 
@@ -88,7 +88,7 @@ const About = () => {
             Simplifying Frappe Deployments for Everyone
           </h2>
           <p className="text-lg text-muted-foreground">
-            We're a team of Frappe enthusiasts dedicated to making ERPNext deployment and management accessible to businesses of all sizes.
+            We&apos;re a team of Frappe enthusiasts dedicated to making ERPNext deployment and management accessible to businesses of all sizes.
           </p>
         </div>
 
@@ -155,7 +155,7 @@ const About = () => {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h3 className="text-2xl font-bold mb-4">What Our Clients Say</h3>
             <p className="text-muted-foreground">
-              Don't just take our word for it. Here's what our clients have to say about FrappeFlow.
+              Don&apos;t just take our word for it. Here&apos;s what our clients have to say about FrappeFlow.
             </p>
           </div>
 
