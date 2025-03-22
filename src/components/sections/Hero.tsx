@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import CustomButton from '../ui/CustomButton';
 import { ArrowRight, Rocket, Terminal, Server } from 'lucide-react';
@@ -56,14 +55,11 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 stagger-reveal">
-            <CustomButton to="/contact" size="lg" variant="primary">
+            <CustomButton to="/pricing" size="lg" variant="primary">
               Get Started <ArrowRight size={18} className="ml-2" />
             </CustomButton>
-            <CustomButton to="/features" size="lg" variant="outline">
+            <CustomButton to="/contact" size="lg" variant="outline">
               Request Demo
-            </CustomButton>
-            <CustomButton to="/contact" size="lg" variant="ghost">
-              Contact Us
             </CustomButton>
           </div>
           
