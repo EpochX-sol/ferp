@@ -69,8 +69,8 @@ const Contact = () => {
       icon: Mail,
       title: 'Email Us',
       description: 'Drop us an email and we\'ll get back to you within 24 hours.',
-      value: 'contact@frappeflow.com',
-      link: 'mailto:contact@frappeflow.com',
+      value: 'contact@ERPflow.com',
+      link: 'mailto:contact@ERPflow.com',
     },
     {
       icon: Phone,
@@ -100,7 +100,7 @@ const Contact = () => {
             We'd Love to Hear From You
           </h2>
           <p className="text-lg text-muted-foreground">
-            Have questions about FrappeFlow or want to schedule a demo? Reach out to us using any of the methods below.
+            Have questions about ERPFlow or want to schedule a demo? Reach out to us using any of the methods below.
           </p>
         </div>
 

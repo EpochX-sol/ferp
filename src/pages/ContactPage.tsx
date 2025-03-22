@@ -215,7 +215,7 @@ const ContactPage = () => {
                     Become a Partner
                   </h2>
                   <p className="text-muted-foreground mb-6">
-                    Join our partner program and offer FrappeFlow to your clients. Earn commissions, get priority support, and access exclusive resources.
+                    Join our partner program and offer ERPFlow to your clients. Earn commissions, get priority support, and access exclusive resources.
                   </p>
                   <CustomButton variant="primary">
                     Apply Now

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { 
   Cpu, 
@@ -42,51 +41,51 @@ const Features = () => {
 
   const features = [
     {
-      title: 'Automated Site Deployment',
-      description: 'Deploy Frappe and ERPNext sites with a single click, removing manual configuration steps.',
-      icon: Server,
+      title: 'Real-Time Monitoring',
+      description: 'Gain complete visibility into your site and bench health with customizable dashboards.',
+      icon: LineChart,
       delay: 0,
     },
     {
-      title: 'Cluster Management',
-      description: 'Efficiently orchestrate and manage multiple Frappe clusters from a central dashboard.',
-      icon: Cpu,
+      title: 'Scalable Infrastructure',
+      description: 'Kubernetes-powered deployment ensures high availability and easy scaling as your business grows.',
+      icon: Server,
       delay: 100,
     },
     {
-      title: 'Seamless Migration & Cloning',
-      description: 'Move and clone ERPNext sites between servers or environments with zero downtime.',
-      icon: GitBranch,
+      title: 'Enhanced Security',
+      description: 'Easily add custom domains and enable 2FA for enhanced security.',
+      icon: Shield,
       delay: 200,
     },
     {
-      title: 'High Availability Setup',
-      description: 'Configure load-balanced, high-availability deployments for mission-critical applications.',
-      icon: Shield,
+      title: 'Automated Backups',
+      description: 'Regular on-site and off-site backups to ensure your data is always protected.',
+      icon: Clock,
       delay: 300,
     },
     {
-      title: 'Performance Optimization',
-      description: 'Automatically tune and optimize your Frappe sites for maximum performance.',
-      icon: Zap,
+      title: 'System Redundancy',
+      description: 'Built-in redundancy and isolation mechanisms to prevent single points of failure.',
+      icon: Repeat,
       delay: 400,
     },
     {
-      title: 'Scheduled Backups',
-      description: 'Set up automated backup schedules with configurable retention policies.',
-      icon: Clock,
+      title: 'Automated Updates',
+      description: 'Stay protected with automated software and security updates for your systems.',
+      icon: Zap,
       delay: 500,
     },
     {
-      title: 'Version Control Integration',
-      description: 'Seamlessly integrate with Git for deploying custom apps and tracking changes.',
-      icon: Repeat,
+      title: 'Performance Optimization',
+      description: 'Continuous monitoring and optimization to ensure optimal system performance.',
+      icon: Cpu,
       delay: 600,
     },
     {
-      title: 'Monitoring & Analytics',
-      description: 'Real-time monitoring and performance analytics for all your Frappe sites.',
-      icon: LineChart,
+      title: 'Integrated Support',
+      description: 'Comprehensive support system for your peace of mind and business continuity.',
+      icon: GitBranch,
       delay: 700,
     },
   ];
@@ -100,10 +99,10 @@ const Features = () => {
             Powerful Features
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Everything You Need to Manage Frappe Deployments
+          Secure, Relable and Scalable Environment To Run Your Business Software
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our comprehensive suite of tools empowers you to deploy, manage, and scale your Frappe and ERPNext environments with ease.
+          Our features are designed to give you complete control and visibility over your ERP/ERPNext environments. Experience seamless operations and enhanced security as you scale your business.
           </p>
         </div>
 

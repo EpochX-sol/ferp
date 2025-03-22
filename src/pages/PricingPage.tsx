@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -59,7 +58,7 @@ const PricingPage = () => {
     },
     {
       question: 'Do you offer a free trial?',
-      answer: 'Yes, we offer a 14-day free trial of the Professional plan so you can explore the full capabilities of FrappeFlow before committing to a subscription.'
+      answer: 'Yes, we offer a 14-day free trial of the Professional plan so you can explore the full capabilities of ERPFlow before committing to a subscription.'
     },
     {
       question: 'Is there a setup fee?',
@@ -90,7 +89,7 @@ const PricingPage = () => {
                 Simple, Predictable Pricing
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Choose the plan that works best for your organization's Frappe deployment needs, with no hidden fees or surprises.
+                Choose the plan that works best for your organization's ERP deployment needs, with no hidden fees or surprises.
               </p>
               <CustomButton to="#pricing-table" size="lg">
                 View Plans
@@ -118,75 +117,113 @@ const PricingPage = () => {
             
             <div className="overflow-x-auto reveal">
               <div className="min-w-[800px]">
-                <table className="w-full border-collapse">
+                {/* Site Plans Comparison */}
+                <h3 className="text-2xl font-bold mb-6">Site Plans</h3>
+                <table className="w-full border-collapse mb-16">
                   <thead>
                     <tr className="border-b border-border">
                       <th className="py-4 px-6 text-left">Feature</th>
-                      <th className="py-4 px-6 text-center">Starter</th>
-                      <th className="py-4 px-6 text-center bg-primary/5 border-x border-border">Professional</th>
-                      <th className="py-4 px-6 text-center">Enterprise</th>
+                      <th className="py-4 px-6 text-center">Basic Site</th>
+                      <th className="py-4 px-6 text-center bg-primary/5 border-x border-border">Professional Site</th>
+                      <th className="py-4 px-6 text-center">Enterprise Site</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b border-border">
-                      <td className="py-4 px-6 font-medium">Frappe Sites</td>
-                      <td className="py-4 px-6 text-center">Up to 5</td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">Up to 20</td>
+                      <td className="py-4 px-6 font-medium">RAM</td>
+                      <td className="py-4 px-6 text-center">1GB</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">2GB</td>
+                      <td className="py-4 px-6 text-center">4GB</td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <td className="py-4 px-6 font-medium">CPU</td>
+                      <td className="py-4 px-6 text-center">1 core</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">2 cores</td>
+                      <td className="py-4 px-6 text-center">4 cores</td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <td className="py-4 px-6 font-medium">Storage</td>
+                      <td className="py-4 px-6 text-center">10GB</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">20GB</td>
+                      <td className="py-4 px-6 text-center">40GB</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                {/* Bench Plans Comparison */}
+                <h3 className="text-2xl font-bold mb-6">Bench Plans</h3>
+                <table className="w-full border-collapse mb-16">
+                  <thead>
+                    <tr className="border-b border-border">
+                      <th className="py-4 px-6 text-left">Feature</th>
+                      <th className="py-4 px-6 text-center">Basic Bench</th>
+                      <th className="py-4 px-6 text-center bg-primary/5 border-x border-border">Professional Bench</th>
+                      <th className="py-4 px-6 text-center">Enterprise Bench</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-border">
+                      <td className="py-4 px-6 font-medium">Sites</td>
+                      <td className="py-4 px-6 text-center">Up to 3 sites</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">Up to 5 sites</td>
+                      <td className="py-4 px-6 text-center">Up to 10 sites</td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <td className="py-4 px-6 font-medium">RAM</td>
+                      <td className="py-4 px-6 text-center">4GB</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">8GB</td>
+                      <td className="py-4 px-6 text-center">16GB</td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <td className="py-4 px-6 font-medium">CPU</td>
+                      <td className="py-4 px-6 text-center">2 cores</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">4 cores</td>
+                      <td className="py-4 px-6 text-center">8 cores</td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <td className="py-4 px-6 font-medium">Storage</td>
+                      <td className="py-4 px-6 text-center">30GB</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">50GB</td>
+                      <td className="py-4 px-6 text-center">100GB</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                {/* Cluster Plans Comparison */}
+                <h3 className="text-2xl font-bold mb-6">Cluster Plans</h3>
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="border-b border-border">
+                      <th className="py-4 px-6 text-left">Feature</th>
+                      <th className="py-4 px-6 text-center">Basic Cluster</th>
+                      <th className="py-4 px-6 text-center bg-primary/5 border-x border-border">Professional Cluster</th>
+                      <th className="py-4 px-6 text-center">Enterprise Cluster</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-border">
+                      <td className="py-4 px-6 font-medium">Benches</td>
+                      <td className="py-4 px-6 text-center">Up to 2 benches</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">Up to 5 benches</td>
                       <td className="py-4 px-6 text-center">Unlimited</td>
                     </tr>
                     <tr className="border-b border-border">
-                      <td className="py-4 px-6 font-medium">Deployment Servers</td>
-                      <td className="py-4 px-6 text-center">1</td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">Up to 3</td>
-                      <td className="py-4 px-6 text-center">Unlimited</td>
+                      <td className="py-4 px-6 font-medium">RAM</td>
+                      <td className="py-4 px-6 text-center">32GB</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">64GB</td>
+                      <td className="py-4 px-6 text-center">Custom</td>
                     </tr>
                     <tr className="border-b border-border">
-                      <td className="py-4 px-6 font-medium">Backup Frequency</td>
-                      <td className="py-4 px-6 text-center">Daily</td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">Hourly</td>
-                      <td className="py-4 px-6 text-center">Continuous</td>
+                      <td className="py-4 px-6 font-medium">CPU</td>
+                      <td className="py-4 px-6 text-center">8 cores</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">16 cores</td>
+                      <td className="py-4 px-6 text-center">Custom</td>
                     </tr>
                     <tr className="border-b border-border">
-                      <td className="py-4 px-6 font-medium">SSL Certificate Management</td>
-                      <td className="py-4 px-6 text-center"><CheckCircle size={18} className="text-primary mx-auto" /></td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border"><CheckCircle size={18} className="text-primary mx-auto" /></td>
-                      <td className="py-4 px-6 text-center"><CheckCircle size={18} className="text-primary mx-auto" /></td>
-                    </tr>
-                    <tr className="border-b border-border">
-                      <td className="py-4 px-6 font-medium">Site Migration & Cloning</td>
-                      <td className="py-4 px-6 text-center">—</td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border"><CheckCircle size={18} className="text-primary mx-auto" /></td>
-                      <td className="py-4 px-6 text-center"><CheckCircle size={18} className="text-primary mx-auto" /></td>
-                    </tr>
-                    <tr className="border-b border-border">
-                      <td className="py-4 px-6 font-medium">Monitoring & Alerts</td>
-                      <td className="py-4 px-6 text-center">Basic</td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">Advanced</td>
-                      <td className="py-4 px-6 text-center">Enterprise-grade</td>
-                    </tr>
-                    <tr className="border-b border-border">
-                      <td className="py-4 px-6 font-medium">High Availability Setup</td>
-                      <td className="py-4 px-6 text-center">—</td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">—</td>
-                      <td className="py-4 px-6 text-center"><CheckCircle size={18} className="text-primary mx-auto" /></td>
-                    </tr>
-                    <tr className="border-b border-border">
-                      <td className="py-4 px-6 font-medium">Custom Integrations</td>
-                      <td className="py-4 px-6 text-center">—</td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">—</td>
-                      <td className="py-4 px-6 text-center"><CheckCircle size={18} className="text-primary mx-auto" /></td>
-                    </tr>
-                    <tr className="border-b border-border">
-                      <td className="py-4 px-6 font-medium">Support</td>
-                      <td className="py-4 px-6 text-center">Email</td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">Priority Email & Chat</td>
-                      <td className="py-4 px-6 text-center">24/7 Priority</td>
-                    </tr>
-                    <tr>
-                      <td className="py-4 px-6 font-medium">Dedicated Account Manager</td>
-                      <td className="py-4 px-6 text-center">—</td>
-                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">—</td>
-                      <td className="py-4 px-6 text-center"><CheckCircle size={18} className="text-primary mx-auto" /></td>
+                      <td className="py-4 px-6 font-medium">Storage</td>
+                      <td className="py-4 px-6 text-center">200GB</td>
+                      <td className="py-4 px-6 text-center bg-primary/5 border-x border-border">500GB</td>
+                      <td className="py-4 px-6 text-center">Custom</td>
                     </tr>
                   </tbody>
                 </table>
@@ -243,7 +280,7 @@ const PricingPage = () => {
                 Ready to Get Started?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Choose the plan that's right for you and start automating your Frappe deployments today.
+                Choose the plan that's right for you and start automating your ERP deployments today.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CustomButton to="/contact" size="lg" variant="primary">

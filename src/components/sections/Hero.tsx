@@ -41,17 +41,17 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center reveal">
           {/* Eyebrow */}
           <div className="inline-block bg-primary/10 text-primary rounded-full px-4 py-1 text-sm font-medium mb-6">
-            Frappe & ERPNext Automation
+            ERP & ERPNext Automation
           </div>
           
           {/* Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Streamline Your Frappe Deployments With Fineto
+            Streamline Your ERP Deployments With FERP
           </h1>
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 md:mb-10 max-w-3xl mx-auto">
-            Deploy, manage, and scale Frappe and ERPNext sites for partners and clients with our powerful automation platform.
+            Deploy, manage, and scale ERP and ERPNext sites for partners and clients with our powerful automation platform.
           </p>
           
           {/* CTA Buttons */}
@@ -96,13 +96,13 @@ const Hero = () => {
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
                   <div className="mx-auto text-xs font-medium text-muted-foreground">
-                    Fineto Dashboard
+                    FERP Dashboard
                   </div>
                 </div>
                 <div className="aspect-[16/9] bg-card rounded rounded-t-none overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
-                    alt="Fineto Dashboard"
+                    src="/dashboard.jpg" 
+                    alt="Ferp Dashboard"
                     className="w-full h-full object-cover"
                   />
                 </div>

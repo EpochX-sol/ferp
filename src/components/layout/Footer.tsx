@@ -16,10 +16,10 @@ const Footer = () => {
               <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
                 <span className="text-white font-bold">F</span>
               </div>
-              <span className="text-xl font-medium">FrappeFlow</span>
+              <span className="text-xl font-medium">ERPFlow</span>
             </Link>
             <p className="text-muted-foreground mb-4">
-              Streamlining Frappe and ERPNext deployments with automated solutions for partners and clients.
+              Streamlining ERP and ERPNext deployments with automated solutions for partners and clients.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -112,7 +112,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <Mail size={18} className="text-primary mt-0.5" />
-                <span className="text-muted-foreground">contact@frappeflow.com</span>
+                <span className="text-muted-foreground">contact@ERPflow.com</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Phone size={18} className="text-primary mt-0.5" />
@@ -133,7 +133,7 @@ const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-              &copy; {currentYear} FrappeFlow. All rights reserved.
+              &copy; {currentYear} ERPFlow. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">

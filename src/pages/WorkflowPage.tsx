@@ -61,7 +61,7 @@ const WorkflowPage = () => {
     },
     {
       title: 'High-Volume Site Migration',
-      description: 'Seamlessly migrate dozens of Frappe sites between servers or data centers with minimal downtime.',
+      description: 'Seamlessly migrate dozens of ERP sites between servers or data centers with minimal downtime.',
       icon: RefreshCw,
       metrics: [
         'Zero downtime migration capability',
@@ -71,7 +71,7 @@ const WorkflowPage = () => {
     },
     {
       title: 'Continuous Delivery Pipeline',
-      description: 'Implement a robust CI/CD workflow for your Frappe applications with automated testing and deployment.',
+      description: 'Implement a robust CI/CD workflow for your ERP applications with automated testing and deployment.',
       icon: Clock,
       metrics: [
         '8x faster development iterations',
@@ -103,10 +103,10 @@ const WorkflowPage = () => {
                 Our Process
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                How FrappeFlow Works
+                How ERPFlow Works
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Discover our streamlined workflow for deploying and managing Frappe and ERPNext applications with unprecedented ease.
+                Discover our streamlined workflow for deploying and managing ERP and ERPNext applications with unprecedented ease.
               </p>
               <CustomButton to="/contact" size="lg">
                 Schedule a Demo
@@ -129,7 +129,7 @@ const WorkflowPage = () => {
                 Behind the Scenes
               </h2>
               <p className="text-lg text-muted-foreground">
-                FrappeFlow uses a sophisticated yet elegant architecture to manage your Frappe deployments.
+                ERPFlow uses a sophisticated yet elegant architecture to manage your ERP deployments.
               </p>
             </div>
             
@@ -142,7 +142,7 @@ const WorkflowPage = () => {
                     <div className="inline-block p-5 bg-primary/10 rounded-full mb-4">
                       <Server size={40} className="text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold mb-2">FrappeFlow Platform</h3>
+                    <h3 className="text-xl font-bold mb-2">ERPFlow Platform</h3>
                     <p className="text-sm text-muted-foreground max-w-md mx-auto">
                       Central management system that orchestrates all deployment and management operations
                     </p>
@@ -212,7 +212,7 @@ const WorkflowPage = () => {
                 Use Cases & Success Stories
               </h2>
               <p className="text-lg text-muted-foreground">
-                See how FrappeFlow transforms Frappe and ERPNext management for various business scenarios.
+                See how ERPFlow transforms ERP and ERPNext management for various business scenarios.
               </p>
             </div>
             
@@ -248,10 +248,10 @@ const WorkflowPage = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto text-center reveal">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Transform Your Frappe Deployment Process?
+                Ready to Transform Your ERP Deployment Process?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Get started with FrappeFlow today and experience the future of Frappe and ERPNext automation.
+                Get started with ERPFlow today and experience the future of ERP and ERPNext automation.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CustomButton to="/contact" size="lg" variant="primary">

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -55,7 +54,7 @@ const FeaturesPage = () => {
       features: [
         {
           title: 'One-Click Deployments',
-          description: 'Deploy new Frappe and ERPNext sites with a single click, eliminating complex manual setup procedures.'
+          description: 'Deploy new ERP and ERPNext sites with a single click, eliminating complex manual setup procedures.'
         },
         {
           title: 'Cluster Management',
@@ -88,8 +87,8 @@ const FeaturesPage = () => {
           description: 'Maintain separate development, staging, and production environments with consistent configurations.'
         },
         {
-          title: 'Batch Operations',
-          description: 'Perform maintenance tasks across multiple sites simultaneously to save time and reduce errors.'
+          title: 'Automated Updates',
+          description: 'Stay protected with automated software and security updates for your systems.'
         }
       ]
     },
@@ -114,28 +113,6 @@ const FeaturesPage = () => {
           description: 'Receive notifications about potential issues before they impact your users or operations.'
         }
       ]
-    },
-    {
-      title: 'Developer Tools',
-      icon: Workflow,
-      features: [
-        {
-          title: 'Version Control Integration',
-          description: 'Seamlessly connect with Git repositories for deploying custom apps and managing code changes.'
-        },
-        {
-          title: 'CI/CD Pipeline Support',
-          description: 'Integrate with continuous integration and deployment workflows for automated testing and deployment.'
-        },
-        {
-          title: 'Customizable Deployment Templates',
-          description: 'Create reusable configurations for consistent deployments across multiple sites.'
-        },
-        {
-          title: 'API Access',
-          description: 'Programmatically control all FrappeFlow operations through a comprehensive RESTful API.'
-        }
-      ]
     }
   ];
   
@@ -151,10 +128,10 @@ const FeaturesPage = () => {
                 Features & Capabilities
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Everything You Need for Frappe Automation
+                Everything You Need for ERP Automation
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Discover how FrappeFlow simplifies and enhances your Frappe and ERPNext deployments with powerful automation tools.
+                Discover how ERPFlow simplifies and enhances your ERP and ERPNext deployments with powerful automation tools.
               </p>
               <CustomButton to="/contact" size="lg">
                 Request a Demo
@@ -178,7 +155,7 @@ const FeaturesPage = () => {
                 Explore Our Full Feature Set
               </h2>
               <p className="text-lg text-muted-foreground">
-                FrappeFlow offers a comprehensive suite of tools designed to streamline every aspect of Frappe deployment and management.
+                ERPFlow offers a comprehensive suite of tools designed to streamline every aspect of ERP deployment and management.
               </p>
             </div>
             
@@ -218,10 +195,10 @@ const FeaturesPage = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto text-center reveal">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Streamline Your Frappe Deployments?
+                Ready to Streamline Your ERP Deployments?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Join hundreds of businesses that have simplified their Frappe and ERPNext management with FrappeFlow.
+                Join hundreds of businesses that have simplified their ERP and ERPNext management with ERPFlow.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CustomButton to="/contact" size="lg" variant="primary">

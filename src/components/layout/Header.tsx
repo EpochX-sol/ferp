@@ -72,12 +72,12 @@ const Header = () => {
           <Link 
             to="/" 
             className="flex items-center space-x-2"
-            aria-label="Fineto logo"
+            aria-label="FERP logo"
           >
             <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
               <span className="text-white font-bold">F</span>
             </div>
-            <span className="text-xl font-medium">Fineto</span>
+            <span className="text-xl font-medium">FERP</span>
           </Link>
 
           {/* Desktop Navigation */}

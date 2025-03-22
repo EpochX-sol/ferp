@@ -32,35 +32,35 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is Fineto?",
-      answer: "Fineto is a powerful automation platform designed to simplify the deployment, management, and scaling of Frappe and ERPNext applications. We offer bench, site, and cluster creation capabilities along with features for migrating, moving, and cloning ERPNext sites."
+      question: "What is FERP?",
+      answer: "FERP is a powerful automation platform designed to simplify the deployment, management, and scaling of ERP and ERPNext applications. We offer bench, site, and cluster creation capabilities along with features for migrating, moving, and cloning ERPNext sites."
     },
     {
-      question: "Who can benefit from using Fineto?",
-      answer: "Fineto serves two main groups: Partners who provide Frappe/ERPNext services to their clients and need to manage multiple deployments efficiently, and direct clients who want to deploy and manage their own ERPNext sites with ease."
+      question: "Who can benefit from using FERP?",
+      answer: "FERP serves two main groups: Partners who provide ERP/ERPNext services to their clients and need to manage multiple deployments efficiently, and direct clients who want to deploy and manage their own ERPNext sites with ease."
     },
     {
-      question: "How does Fineto's bench creation work?",
-      answer: "Our bench creation system automates the entire process of setting up a new Frappe bench. It handles dependency installation, configuration of environment, Git repository setup, and other complex tasks with just a few clicks, saving you hours of manual setup time."
+      question: "How does FERP's bench creation work?",
+      answer: "Our bench creation system automates the entire process of setting up a new ERP bench. It handles dependency installation, configuration of environment, Git repository setup, and other complex tasks with just a few clicks, saving you hours of manual setup time."
     },
     {
-      question: "Can I migrate existing ERPNext sites to Fineto?",
-      answer: "Yes! Fineto offers seamless migration tools that can move your existing ERPNext sites to our platform with minimal downtime. Our system handles the complex aspects of database migration, file transfers, and configuration adjustments automatically."
+      question: "Can I migrate existing ERPNext sites to FERP?",
+      answer: "Yes! FERP offers seamless migration tools that can move your existing ERPNext sites to our platform with minimal downtime. Our system handles the complex aspects of database migration, file transfers, and configuration adjustments automatically."
     },
     {
       question: "How does site cloning work?",
-      answer: "Fineto's cloning capability allows you to create exact duplicates of production sites for testing, development, or client demonstration purposes. The process preserves all configurations, installed apps, and can optionally include or exclude production data."
+      answer: "FERP's cloning capability allows you to create exact duplicates of production sites for testing, development, or client demonstration purposes. The process preserves all configurations, installed apps, and can optionally include or exclude production data."
     },
     {
-      question: "What kind of support does Fineto offer?",
-      answer: "We provide tiered support options ranging from standard email support to premium 24/7 assistance. Our team includes Frappe experts who understand the complexities of ERPNext deployments and can help resolve any issues quickly."
+      question: "What kind of support does FERP offer?",
+      answer: "We provide tiered support options ranging from standard email support to premium 24/7 assistance. Our team includes ERP experts who understand the complexities of ERPNext deployments and can help resolve any issues quickly."
     },
     {
-      question: "Is Fineto secure?",
-      answer: "Absolutely. Security is a top priority at Fineto. We implement industry best practices for data encryption, access control, regular security audits, and automated backup systems to ensure your Frappe deployments remain secure and compliant."
+      question: "Is FERP secure?",
+      answer: "Absolutely. Security is a top priority at FERP. We implement industry best practices for data encryption, access control, regular security audits, and automated backup systems to ensure your ERP deployments remain secure and compliant."
     },
     {
-      question: "How do I get started with Fineto?",
+      question: "How do I get started with FERP?",
       answer: "Getting started is easy! Simply sign up for an account, choose your plan, and follow our guided setup process. Alternatively, you can request a demo and our team will walk you through the platform's capabilities and how it can be tailored to your specific needs."
     }
   ];
@@ -76,7 +76,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Find answers to common questions about Fineto and our Frappe automation platform.
+            Find answers to common questions about FERP and our ERP automation platform.
           </p>
         </div>
 

@@ -1,7 +1,6 @@
-
 import React, { useEffect } from 'react';
 import CustomButton from '../ui/CustomButton';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ArrowRight, Monitor, Database, Server, Globe } from 'lucide-react';
 
 const HowItWorks = () => {
   useEffect(() => {
@@ -33,47 +32,51 @@ const HowItWorks = () => {
   const steps = [
     {
       number: '01',
-      title: 'Connect Your Infrastructure',
-      description: 'Link your cloud or on-premise servers to the FrappeFlow platform with our secure agent.',
+      title: 'Create Your Cluster',
+      description: 'Set up your infrastructure cluster to host your ERP applications.',
       checks: [
-        'Supports AWS, GCP, Azure, and Digital Ocean',
-        'Works with bare metal servers',
-        'SSL encrypted connection',
-        'Minimal access requirements'
-      ]
+        'Configure cluster resources',
+        'Set up networking and security',
+        'Define cluster parameters',
+        'Monitor cluster health'
+      ],
+      icon: 'cluster'
     },
     {
       number: '02',
-      title: 'Configure Deployment Templates',
-      description: 'Set up reusable templates for your Frappe and ERPNext deployments with your preferred configurations.',
+      title: 'Deploy Benches',
+      description: 'Create and configure benches within your cluster with just a few clicks.',
       checks: [
-        'Customizable bench settings',
-        'Pre-configure apps to install',
-        'Define resource allocations',
-        'Set environment variables'
-      ]
+        'Select target cluster',
+        'Configure bench settings',
+        'Set database parameters',
+        'Specify resource allocation'
+      ],
+      icon: 'bench'
     },
     {
       number: '03',
-      title: 'Deploy and Manage Sites',
-      description: 'Deploy new sites, migrate existing ones, or clone production environments with just a few clicks.',
+      title: 'Create Sites',
+      description: 'Deploy new sites instantly through our intuitive interface.',
       checks: [
-        'One-click deployment',
-        'Automated database setup',
-        'Built-in load balancing',
-        'Zero-downtime migrations'
-      ]
+        'Choose target bench',
+        'Set site name and credentials',
+        'Select apps to install',
+        'Deploy with one click'
+      ],
+      icon: 'site'
     },
     {
       number: '04',
-      title: 'Monitor and Scale',
-      description: 'Keep track of your deployments with real-time monitoring and scale resources as your needs grow.',
+      title: 'Manage & Monitor',
+      description: 'Monitor and manage all your deployments from a single dashboard.',
       checks: [
-        'Performance metrics dashboard',
-        'Automated scaling options',
-        'Proactive alert system',
-        'Resource usage optimization'
-      ]
+        'Real-time monitoring',
+        'Resource management',
+        'Automated backups',
+        'Performance optimization'
+      ],
+      icon: 'monitor'
     }
   ];
 
@@ -81,115 +84,155 @@ const HowItWorks = () => {
     <section id="how-it-works" className="py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+        <div className="text-center max-w-2xl mx-auto mb-16 reveal">
           <div className="inline-block bg-primary/10 text-primary rounded-full px-4 py-1 text-sm font-medium mb-4">
             Simple Process
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            How FrappeFlow Works
+            How ERPFlow Works
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our streamlined workflow makes deploying and managing Frappe applications simpler than ever before.
+            Deploy and manage your ERP applications in three simple steps
           </p>
         </div>
 
-        {/* Steps */}
-        <div className="max-w-5xl mx-auto">
-          {steps.map((step, index) => (
-            <div 
-              key={index} 
-              className={`relative flex flex-col lg:flex-row items-start gap-6 lg:gap-12 mb-16 reveal ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
-            >
-              {/* Step number and connector line */}
-              <div className="hidden lg:flex flex-col items-center">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-xl font-bold text-primary">{step.number}</span>
+        {/* Interactive Flow Diagram */}
+        <div className="max-w-4xl mx-auto mb-20">
+          <div className="relative">
+            {/* Connection Lines */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+            </div>
+
+            <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Cluster Card */}
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                <div className="relative p-6 text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                    <Server className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">Cluster</h3>
+                  <p className="text-sm text-muted-foreground">Infrastructure foundation</p>
+                  
+                  {/* Popup Info */}
+                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-background border border-border rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                    <ul className="text-sm space-y-2">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle size={12} className="text-primary" />
+                        <span>Configure resources</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle size={12} className="text-primary" />
+                        <span>Set up networking</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                {index < steps.length - 1 && (
-                  <div className="w-px h-24 bg-primary/20 my-4"></div>
-                )}
-              </div>
-
-              {/* Mobile step number */}
-              <div className="flex lg:hidden items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
-                  <span className="text-lg font-bold text-primary">{step.number}</span>
+                <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
+                  <ArrowRight className="w-6 h-6 text-primary animate-pulse" />
                 </div>
-                <h3 className="text-xl font-bold">{step.title}</h3>
               </div>
 
-              {/* Step content */}
-              <div className={`flex-1 ${index % 2 === 1 ? 'lg:text-right' : ''}`}>
-                <h3 className="hidden lg:block text-2xl font-bold mb-4">{step.title}</h3>
-                <p className="text-lg text-muted-foreground mb-6">{step.description}</p>
-                <ul className="space-y-3">
-                  {step.checks.map((check, checkIndex) => (
-                    <li 
-                      key={checkIndex} 
-                      className={`flex items-center gap-2 text-sm ${index % 2 === 1 ? 'lg:justify-end' : ''}`}
-                    >
-                      <CheckCircle size={18} className="text-primary" />
-                      <span>{check}</span>
-                    </li>
-                  ))}
-                </ul>
+              {/* Bench Card */}
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                <div className="relative p-6 text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                    <Database className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">Bench</h3>
+                  <p className="text-sm text-muted-foreground">Application environment</p>
+                  
+                  {/* Popup Info */}
+                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-background border border-border rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                    <ul className="text-sm space-y-2">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle size={12} className="text-primary" />
+                        <span>Select cluster</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle size={12} className="text-primary" />
+                        <span>Configure DB</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
+                  <ArrowRight className="w-6 h-6 text-primary animate-pulse" />
+                </div>
               </div>
 
-              {/* Step illustration (placeholder) */}
-              <div className="w-full lg:w-1/3 aspect-square bg-secondary rounded-lg flex items-center justify-center">
-                <div className="p-6 rounded-full bg-primary/10">
-                  <svg 
-                    className="w-12 h-12 text-primary" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
-                  >
-                    {index === 0 && (
-                      <>
-                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                        <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                        <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                      </>
-                    )}
-                    {index === 1 && (
-                      <>
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
-                      </>
-                    )}
-                    {index === 2 && (
-                      <>
-                        <polyline points="16 3 21 3 21 8"></polyline>
-                        <line x1="4" y1="20" x2="21" y2="3"></line>
-                        <polyline points="21 16 21 21 16 21"></polyline>
-                        <line x1="15" y1="15" x2="21" y2="21"></line>
-                        <line x1="4" y1="4" x2="9" y2="9"></line>
-                      </>
-                    )}
-                    {index === 3 && (
-                      <>
-                        <line x1="18" y1="20" x2="18" y2="10"></line>
-                        <line x1="12" y1="20" x2="12" y2="4"></line>
-                        <line x1="6" y1="20" x2="6" y2="14"></line>
-                        <path d="M18 10l-2-2-4 4-2-2-4 4"></path>
-                      </>
-                    )}
-                  </svg>
+              {/* Site Card */}
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                <div className="relative p-6 text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                    <Globe className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">Site</h3>
+                  <p className="text-sm text-muted-foreground">ERP application</p>
+                  
+                  {/* Popup Info */}
+                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-background border border-border rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                    <ul className="text-sm space-y-2">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle size={12} className="text-primary" />
+                        <span>Select bench</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle size={12} className="text-primary" />
+                        <span>Configure site</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+        </div>
+
+        {/* Process Steps */}
+        <div className="max-w-3xl mx-auto">
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-8 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/30 via-primary/50 to-primary/30"></div>
+
+            {/* Steps */}
+            <div className="space-y-12">
+              {steps.map((step, index) => (
+                <div key={index} className="relative pl-20 reveal">
+                  {/* Step Number */}
+                  <div className="absolute left-4 -translate-x-1/2 w-8 h-8 rounded-full bg-primary/10 border-4 border-background flex items-center justify-center">
+                    <span className="text-sm font-bold text-primary">{step.number}</span>
+                  </div>
+
+                  {/* Content Card */}
+                  <div className="p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+                    <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+                    <p className="text-sm text-muted-foreground mb-4">{step.description}</p>
+                    
+                    {/* Features Grid */}
+                    <div className="grid grid-cols-2 gap-3">
+                      {step.checks.map((check, checkIndex) => (
+                        <div 
+                          key={checkIndex}
+                          className="flex items-center gap-2 p-2 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors"
+                        >
+                          <CheckCircle size={14} className="text-primary flex-shrink-0" />
+                          <span className="text-sm">{check}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12 reveal">
+        <div className="text-center mt-16 reveal">
           <CustomButton to="/workflow" size="lg">
             Learn More About Our Process
           </CustomButton>

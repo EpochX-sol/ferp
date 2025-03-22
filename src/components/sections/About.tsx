@@ -35,7 +35,7 @@ const About = () => {
     {
       icon: Lightbulb,
       title: 'Innovation',
-      description: 'We constantly push the boundaries of what\'s possible in Frappe deployment automation.'
+      description: 'We constantly push the boundaries of what\'s possible in ERP deployment automation.'
     },
     {
       icon: Users,
@@ -45,7 +45,7 @@ const About = () => {
     {
       icon: Target,
       title: 'Efficiency',
-      description: 'We\'re obsessed with making Frappe deployment and management as streamlined as possible.'
+      description: 'We\'re obsessed with making ERP deployment and management as streamlined as possible.'
     },
     {
       icon: Award,
@@ -56,7 +56,7 @@ const About = () => {
 
   const testimonials = [
     {
-      quote: "Fineto has revolutionized how we deploy and manage ERPNext instances for our clients. What used to take days now takes minutes.",
+      quote: "FERP has revolutionized how we deploy and manage ERPNext instances for our clients. What used to take days now takes minutes.",
       author: "Sarah Johnson",
       position: "CTO, TechSolutions Inc."
     },
@@ -66,7 +66,7 @@ const About = () => {
       position: "IT Director, Global Manufacturing"
     },
     {
-      quote: "As a Frappe partner, Fineto has been a game-changer for our business. We can now serve more clients with less overhead.",
+      quote: "As a ERP partner, FERP has been a game-changer for our business. We can now serve more clients with less overhead.",
       author: "Priya Sharma",
       position: "Founder, ERPExperts"
     }
@@ -85,10 +85,10 @@ const About = () => {
             Our Mission
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Simplifying Frappe Deployments for Everyone
+            Simplifying ERP Deployments for Everyone
           </h2>
           <p className="text-lg text-muted-foreground">
-            We&apos;re a team of Frappe enthusiasts dedicated to making ERPNext deployment and management accessible to businesses of all sizes.
+            We&apos;re a team of ERP enthusiasts dedicated to making ERPNext deployment and management accessible to businesses of all sizes.
           </p>
         </div>
 
@@ -97,13 +97,13 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Our Story</h3>
             <p className="text-muted-foreground mb-4">
-              Fineto was born from our own frustrations managing multiple Frappe deployments across different environments. We saw firsthand how much time and resources were being spent on repetitive tasks that could be automated.
+              FERP was born from our own frustrations managing multiple ERP deployments across different environments. We saw firsthand how much time and resources were being spent on repetitive tasks that could be automated.
             </p>
             <p className="text-muted-foreground mb-4">
-              In 2021, we set out to build the tool we wished we had – a comprehensive platform that would take the complexity out of deploying and managing Frappe applications.
+              In 2021, we set out to build the tool we wished we had – a comprehensive platform that would take the complexity out of deploying and managing ERP applications.
             </p>
             <p className="text-muted-foreground mb-6">
-              Today, Fineto is used by partners and businesses around the world to deploy, manage, and scale their Frappe and ERPNext environments with unprecedented ease and efficiency.
+              Today, FERP is used by partners and businesses around the world to deploy, manage, and scale their ERP and ERPNext environments with unprecedented ease and efficiency.
             </p>
             <CustomButton to="/about" variant="outline">
               Learn More About Us
@@ -126,7 +126,7 @@ const About = () => {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h3 className="text-2xl font-bold mb-4">Our Values</h3>
             <p className="text-muted-foreground">
-              These core principles guide everything we do at Fineto.
+              These core principles guide everything we do at FERP.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ const About = () => {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h3 className="text-2xl font-bold mb-4">What Our Clients Say</h3>
             <p className="text-muted-foreground">
-              Don&apos;t just take our word for it. Here&apos;s what our clients have to say about Fineto.
+              Don&apos;t just take our word for it. Here&apos;s what our clients have to say about FERP.
             </p>
           </div>
 
