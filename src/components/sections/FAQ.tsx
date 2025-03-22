@@ -32,7 +32,7 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is FERP?",
+      question: "What is FERP? ",
       answer: "FERP is a powerful automation platform designed to simplify the deployment, management, and scaling of ERP and ERPNext applications. We offer bench, site, and cluster creation capabilities along with features for migrating, moving, and cloning ERPNext sites."
     },
     {
