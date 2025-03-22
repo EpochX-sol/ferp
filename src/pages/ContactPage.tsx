@@ -50,14 +50,14 @@ const ContactPage = () => {
   
   const officeLocations = [
     {
-      city: 'San Francisco',
-      address: '123 Tech Park, Suite 100\nSan Francisco, CA 94107',
-      hours: 'Monday - Friday: 9am - 6pm PT',
+      city: 'Helsinki',
+      address: 'Opastinsilta 800520',
+      hours: 'Monday - Saturday: 9am - 6pm PT',
       icon: MapPin,
     },
     {
-      city: 'New York',
-      address: '456 Innovation Tower, 15th Floor\nNew York, NY 10001',
+      city: 'Addis Ababa',
+      address: 'Old Airport Muntha Building, 2nd Floor W09, KK',
       hours: 'Monday - Friday: 9am - 6pm ET',
       icon: MapPin,
     },
@@ -215,7 +215,7 @@ const ContactPage = () => {
                     Become a Partner
                   </h2>
                   <p className="text-muted-foreground mb-6">
-                    Join our partner program and offer ERPFlow to your clients. Earn commissions, get priority support, and access exclusive resources.
+                    Join our partner program and offer FERP to your clients. Earn commissions, get priority support, and access exclusive resources.
                   </p>
                   <CustomButton variant="primary">
                     Apply Now

@@ -89,7 +89,7 @@ const HowItWorks = () => {
             Simple Process
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            How ERPFlow Works
+            How FERP Works
           </h2>
           <p className="text-lg text-muted-foreground">
             Deploy and manage your ERP applications in three simple steps
@@ -99,10 +99,10 @@ const HowItWorks = () => {
         {/* Interactive Flow Diagram */}
         <div className="max-w-4xl mx-auto mb-20">
           <div className="relative">
-            {/* Connection Lines */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            {/* Remove the following Connection Lines div */}
+            {/* <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-            </div>
+            </div> */}
 
             <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Cluster Card */}

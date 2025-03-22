@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from 'lucide-react';
@@ -13,10 +12,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-                <span className="text-white font-bold">F</span>
-              </div>
-              <span className="text-xl font-medium">ERPFlow</span>
+              <img 
+                src="/logo.jpg" 
+                alt="FERP Logo" 
+                className="h-10 w-auto object-contain"
+              />
             </Link>
             <p className="text-muted-foreground mb-4">
               Streamlining ERP and ERPNext deployments with automated solutions for partners and clients.
@@ -88,18 +88,18 @@ const Footer = () => {
           <div>
             <h4 className="text-base font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
-              <li>
+              {/* <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Documentation</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">API Reference</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Blog</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Tutorials</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a>
               </li>
@@ -112,17 +112,28 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <Mail size={18} className="text-primary mt-0.5" />
-                <span className="text-muted-foreground">contact@ERPflow.com</span>
+                <span className="text-muted-foreground">info@fineto.fi</span>
+              </li>
+              <li className="flex items-start space-x-3" >
+                <Phone size={18} className="text-primary mt-0.5" />
+                <span className="text-muted-foreground">+358-443393959</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Phone size={18} className="text-primary mt-0.5" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+251-988208811</span>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-primary mt-0.5" />
                 <span className="text-muted-foreground">
-                  123 Tech Park, Suite 100<br />
-                  San Francisco, CA 94107
+                Opastinsilta 800520<br />
+                Helsinki, Finland
+                </span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <MapPin size={25} className="text-primary mt-0.5" />
+                <span className="text-muted-foreground">
+                Old Airport Muntha Building, 2nd Floor W09, KK<br />
+                Addis Ababa, Ethiopia
                 </span>
               </li>
             </ul>
@@ -133,7 +144,7 @@ const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-              &copy; {currentYear} ERPFlow. All rights reserved.
+              &copy; {currentYear} FERP. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">

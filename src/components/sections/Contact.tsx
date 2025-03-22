@@ -69,15 +69,22 @@ const Contact = () => {
       icon: Mail,
       title: 'Email Us',
       description: 'Drop us an email and we\'ll get back to you within 24 hours.',
-      value: 'contact@ERPflow.com',
-      link: 'mailto:contact@ERPflow.com',
+      value: 'info@fineto.fi',
+      link: 'mailto:info@fineto.fi',
     },
     {
       icon: Phone,
       title: 'Call Us',
       description: 'Speak directly with our support team during business hours.',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+358-443393959',
+      link: 'tel:+358443393959',
+    },
+    {
+      icon: Phone,
+      title: 'Call Us',
+      description: 'Speak directly with our support team during business hours.',
+      value: '+251-988208811',
+      link: 'tel:+251988208811',
     },
     {
       icon: MessageSquare,
@@ -100,7 +107,7 @@ const Contact = () => {
             We'd Love to Hear From You
           </h2>
           <p className="text-lg text-muted-foreground">
-            Have questions about ERPFlow or want to schedule a demo? Reach out to us using any of the methods below.
+            Have questions about FERP or want to schedule a demo? Reach out to us using any of the methods below.
           </p>
         </div>
 
@@ -129,12 +136,11 @@ const Contact = () => {
             <div className="mt-12 pt-6 border-t border-border">
               <h3 className="text-xl font-semibold mb-4">Our Office</h3>
               <p className="text-muted-foreground">
-                123 Tech Park, Suite 100<br />
-                San Francisco, CA 94107<br />
-                United States
+              Old Airport Muntha Building, 2nd Floor W09, KK<br />
+              Addis Ababa, Ethiopia<br />
               </p>
               <p className="mt-4 text-sm text-muted-foreground">
-                <strong>Hours:</strong> Monday - Friday, 9am - 6pm PST
+                <strong>Hours:</strong> Monday - Friday, 9am - 6pm EAT 
               </p>
             </div>
           </div>
@@ -222,15 +228,15 @@ const Contact = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="mt-20 max-w-3xl mx-auto text-center reveal">
+        {/* <div className="mt-20 max-w-3xl mx-auto text-center reveal">
           <h3 className="text-2xl font-bold mb-6">Frequently Asked Questions</h3>
           <p className="text-muted-foreground mb-8">
             Can't find what you're looking for? Check out our comprehensive FAQ section.
           </p>
-          <CustomButton to="/faq" variant="outline">
+          <CustomButton to="#faq" variant="outline">
             View FAQ
           </CustomButton>
-        </div>
+        </div> */}
       </div>
     </section>
   );

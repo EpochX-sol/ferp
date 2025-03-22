@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -103,7 +102,7 @@ const WorkflowPage = () => {
                 Our Process
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                How ERPFlow Works
+                How FERP Works
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
                 Discover our streamlined workflow for deploying and managing ERP and ERPNext applications with unprecedented ease.
@@ -129,7 +128,7 @@ const WorkflowPage = () => {
                 Behind the Scenes
               </h2>
               <p className="text-lg text-muted-foreground">
-                ERPFlow uses a sophisticated yet elegant architecture to manage your ERP deployments.
+                FERP uses a sophisticated yet elegant architecture to manage your ERP deployments.
               </p>
             </div>
             
@@ -142,14 +141,15 @@ const WorkflowPage = () => {
                     <div className="inline-block p-5 bg-primary/10 rounded-full mb-4">
                       <Server size={40} className="text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold mb-2">ERPFlow Platform</h3>
+                    <h3 className="text-xl font-bold mb-2">FERP Platform</h3>
                     <p className="text-sm text-muted-foreground max-w-md mx-auto">
                       Central management system that orchestrates all deployment and management operations
                     </p>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-                    <div className="text-center">
+                  {/* Three column grid with improved spacing */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 w-full relative z-10">
+                    <div className="text-center p-4 bg-background rounded-lg">
                       <div className="inline-block p-4 bg-primary/10 rounded-full mb-3">
                         <Database size={28} className="text-primary" />
                       </div>
@@ -158,7 +158,7 @@ const WorkflowPage = () => {
                         Handles all data storage and retrieval operations
                       </p>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center p-4 bg-background rounded-lg">
                       <div className="inline-block p-4 bg-primary/10 rounded-full mb-3">
                         <RefreshCw size={28} className="text-primary" />
                       </div>
@@ -167,7 +167,7 @@ const WorkflowPage = () => {
                         Secure communication with servers in your infrastructure
                       </p>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center p-4 bg-background rounded-lg">
                       <div className="inline-block p-4 bg-primary/10 rounded-full mb-3">
                         <LineChart size={28} className="text-primary" />
                       </div>
@@ -178,25 +178,9 @@ const WorkflowPage = () => {
                     </div>
                   </div>
                   
-                  {/* Connector arrows would be implemented with SVG in a real design */}
-                  <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 opacity-10 pointer-events-none">
-                    <svg width="500" height="300" viewBox="0 0 500 300" fill="none">
-                      <path d="M250 100 L100 200" stroke="currentColor" strokeWidth="2" />
-                      <path d="M250 100 L250 200" stroke="currentColor" strokeWidth="2" />
-                      <path d="M250 100 L400 200" stroke="currentColor" strokeWidth="2" />
-                    </svg>
-                  </div>
+                  {/* Removing the connector arrows entirely */}
                 </div>
               </div>
-            </div>
-            
-            <div className="text-center mt-8 reveal">
-              <p className="text-sm text-muted-foreground mb-4">
-                For detailed technical documentation:
-              </p>
-              <CustomButton variant="outline" href="#">
-                View Technical Docs
-              </CustomButton>
             </div>
           </div>
         </section>
@@ -212,7 +196,7 @@ const WorkflowPage = () => {
                 Use Cases & Success Stories
               </h2>
               <p className="text-lg text-muted-foreground">
-                See how ERPFlow transforms ERP and ERPNext management for various business scenarios.
+                See how FERP transforms ERP and ERPNext management for various business scenarios.
               </p>
             </div>
             
@@ -251,7 +235,7 @@ const WorkflowPage = () => {
                 Ready to Transform Your ERP Deployment Process?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Get started with ERPFlow today and experience the future of ERP and ERPNext automation.
+                Get started with FERP today and experience the future of ERP and ERPNext automation.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CustomButton to="/contact" size="lg" variant="primary">

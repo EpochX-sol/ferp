@@ -12,7 +12,7 @@ import {
 import { CustomCard, CardContent, CardHeader, CardTitle, CardDescription } from '../ui/CustomCard';
 import CustomButton from '../ui/CustomButton';
 
-const Features = () => {
+const Features = ({ hideExploreButton = false }) => {
   useEffect(() => {
     // Intersection Observer for animations
     const observerOptions = {
@@ -124,11 +124,11 @@ const Features = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 text-center reveal">
+        {!hideExploreButton && <div className="mt-16 text-center reveal">
           <CustomButton to="/features" size="lg">
             Explore All Features
           </CustomButton>
-        </div>
+        </div>}
       </div>
     </section>
   );

@@ -97,10 +97,10 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Our Story</h3>
             <p className="text-muted-foreground mb-4">
-              FERP was born from our own frustrations managing multiple ERP deployments across different environments. We saw firsthand how much time and resources were being spent on repetitive tasks that could be automated.
+                We’re a team of wizards in Helsinki Finland, crafting magic with AI to make jobs zoom by fast.
             </p>
             <p className="text-muted-foreground mb-4">
-              In 2021, we set out to build the tool we wished we had – a comprehensive platform that would take the complexity out of deploying and managing ERP applications.
+               We’ve got the secret ingredients: ERP Next and Frappe, making everything work like a dream. Plus, we build cool apps for mobile phones and also Team/Slack collaboration tools where everything happens.
             </p>
             <p className="text-muted-foreground mb-6">
               Today, FERP is used by partners and businesses around the world to deploy, manage, and scale their ERP and ERPNext environments with unprecedented ease and efficiency.

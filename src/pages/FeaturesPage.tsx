@@ -131,7 +131,7 @@ const FeaturesPage = () => {
                 Everything You Need for ERP Automation
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Discover how ERPFlow simplifies and enhances your ERP and ERPNext deployments with powerful automation tools.
+                Discover how FERP simplifies and enhances your ERP and ERPNext deployments with powerful automation tools.
               </p>
               <CustomButton to="/contact" size="lg">
                 Request a Demo
@@ -141,7 +141,7 @@ const FeaturesPage = () => {
         </section>
         
         {/* Overview Features Section */}
-        <Features />
+        <Features hideExploreButton={true} />
         
         {/* Detailed Features */}
         <section className="py-20 md:py-32">
@@ -155,7 +155,7 @@ const FeaturesPage = () => {
                 Explore Our Full Feature Set
               </h2>
               <p className="text-lg text-muted-foreground">
-                ERPFlow offers a comprehensive suite of tools designed to streamline every aspect of ERP deployment and management.
+                FERP offers a comprehensive suite of tools designed to streamline every aspect of ERP deployment and management.
               </p>
             </div>
             
@@ -198,7 +198,7 @@ const FeaturesPage = () => {
                 Ready to Streamline Your ERP Deployments?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Join hundreds of businesses that have simplified their ERP and ERPNext management with ERPFlow.
+                Join hundreds of businesses that have simplified their ERP and ERPNext management with FERP.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CustomButton to="/contact" size="lg" variant="primary">

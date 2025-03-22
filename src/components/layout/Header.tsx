@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -9,13 +8,13 @@ const Header = () => {
   const location = useLocation();
 
   const navigationLinks = [
-    { name: 'Home', path: '/', section: '#hero' },
-    { name: 'Features', path: '/', section: '#features' },
-    { name: 'How It Works', path: '/', section: '#how-it-works' },
-    { name: 'Pricing', path: '/', section: '#pricing' },
-    { name: 'About', path: '/', section: '#about' },
-    { name: 'Contact', path: '/', section: '#contact' },
-    { name: 'FAQ', path: '/', section: '#faq' },
+    { name: 'Home', path: '', section: '#hero' },
+    { name: 'Features', path: 'features', section: '#features' },
+    { name: 'How It Works', path: 'workflow', section: '#how-it-works' },
+    { name: 'Pricing', path: 'pricing', section: '#pricing' },
+    { name: 'About', path: 'about', section: '#about' },
+    { name: 'Contact', path: 'contact', section: '#contact' },
+    // { name: 'FAQ', path: 'faq', section: '#faq' }, 
   ];
 
   // Handle scroll effect
@@ -37,7 +36,7 @@ const Header = () => {
     e.preventDefault();
     
     // Check if we're on the home page
-    if (location.pathname === '/') {
+    if (section.startsWith('#')) {
       const element = document.querySelector(section);
       if (element) {
         window.scrollTo({
@@ -85,10 +84,10 @@ const Header = () => {
             {navigationLinks.map((link) => (
               <a
                 key={link.name}
-                href={link.section}
-                onClick={(e) => handleNavigation(e, link.section)}
+                href={link.path}
+                onClick={(e) => handleNavigation(e, link.path)}
                 className={`text-sm font-medium transition-all duration-200 hover:text-primary cursor-pointer ${
-                  location.hash === link.section || (location.pathname === link.path && !location.hash && link.section === '#hero')
+                  location.pathname === `/${link.path}`
                     ? 'text-primary'
                     : 'text-foreground/80'
                 }`}
@@ -101,7 +100,8 @@ const Header = () => {
           {/* CTA Button (Desktop) */}
           <div className="hidden md:block">
             <Link
-              to="/contact"
+              to="#contact"
+              onClick={(e) => handleNavigation(e, "#contact")}
               className="bg-primary text-white px-6 py-2 rounded-full button-animation"
             >
               Get Started
@@ -129,7 +129,7 @@ const Header = () => {
                   href={link.section}
                   onClick={(e) => handleNavigation(e, link.section)}
                   className={`py-4 text-lg font-medium border-b border-border ${
-                    location.hash === link.section
+                    location.pathname === `/${link.path}`
                       ? 'text-primary'
                       : 'text-foreground/80'
                   }`}
@@ -139,7 +139,8 @@ const Header = () => {
               ))}
               <div className="mt-8">
                 <Link
-                  to="/contact"
+                  to="#contact"
+                  onClick={(e) => handleNavigation(e, "#contact")}
                   className="block text-center bg-primary text-white px-6 py-3 rounded-full w-full button-animation"
                 >
                   Get Started

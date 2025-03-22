@@ -58,7 +58,7 @@ const PricingPage = () => {
     },
     {
       question: 'Do you offer a free trial?',
-      answer: 'Yes, we offer a 14-day free trial of the Professional plan so you can explore the full capabilities of ERPFlow before committing to a subscription.'
+      answer: 'Yes, we offer a 14-day free trial of the Professional plan so you can explore the full capabilities of FERP before committing to a subscription.'
     },
     {
       question: 'Is there a setup fee?',

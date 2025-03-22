@@ -62,12 +62,12 @@ const AboutPage = () => {
     {
       name: 'David Chen',
       role: 'Head of Product',
-      bio: 'With a background in UX design and product management, David ensures ERPFlow is both powerful and intuitive to use.',
+      bio: 'With a background in UX design and product management, David ensures FERP is both powerful and intuitive to use.',
     },
     {
       name: 'Sarah Williams',
       role: 'Customer Success Lead',
-      bio: 'Sarah works directly with clients to ensure they get the most out of ERPFlow and their ERP deployments.',
+      bio: 'Sarah works directly with clients to ensure they get the most out of FERP and their ERP deployments.',
     }
   ];
   
@@ -80,17 +80,17 @@ const AboutPage = () => {
     {
       year: '2020',
       title: 'Early Development',
-      description: 'The first prototype of ERPFlow was developed and tested internally.'
+      description: 'The first prototype of FERP was developed and tested internally.'
     },
     {
       year: '2021',
       title: 'Company Formation',
-      description: 'ERPFlow was officially established and the product entered beta testing with select partners.'
+      description: 'FERP was officially established and the product entered beta testing with select partners.'
     },
     {
       year: '2022',
       title: 'Public Launch',
-      description: 'After extensive testing and refinement, ERPFlow was officially launched to the public.'
+      description: 'After extensive testing and refinement, FERP was officially launched to the public.'
     },
     {
       year: '2023',
@@ -100,7 +100,7 @@ const AboutPage = () => {
     {
       year: 'Today',
       title: 'Continuous Innovation',
-      description: 'We continue to enhance ERPFlow with new features and capabilities based on user feedback.'
+      description: 'We continue to enhance FERP with new features and capabilities based on user feedback.'
     }
   ];
   
@@ -116,7 +116,7 @@ const AboutPage = () => {
                 Our Story
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                About ERPFlow
+                About FERP
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
                 We're on a mission to simplify ERP and ERPNext deployments for businesses around the world.
@@ -139,10 +139,10 @@ const AboutPage = () => {
                 Our Journey
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                The ERPFlow Timeline
+                The FERP Timeline
               </h2>
               <p className="text-lg text-muted-foreground">
-                From idea to reality, here's how ERPFlow has evolved over the years.
+                From idea to reality, here's how FERP has evolved over the years.
               </p>
             </div>
             
@@ -334,7 +334,7 @@ const AboutPage = () => {
                 Join Our Growing Community
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Discover how ERPFlow can transform your ERP and ERPNext deployment workflow.
+                Discover how FERP can transform your ERP and ERPNext deployment workflow.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CustomButton to="/contact" size="lg" variant="primary">

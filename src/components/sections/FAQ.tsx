@@ -103,9 +103,9 @@ const FAQ = () => {
             <CustomButton to="/contact" variant="primary">
               Contact Support
             </CustomButton>
-            <CustomButton to="/docs" variant="outline">
+            {/* <CustomButton to="/docs" variant="outline">
               View Documentation
-            </CustomButton>
+            </CustomButton> */}
           </div>
         </div>
       </div>
