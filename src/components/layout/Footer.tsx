@@ -19,7 +19,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-muted-foreground mb-4">
-              Streamlining ERP and ERPNext deployments with automated solutions for partners and clients.
+              Streamlining ERPNext deployments with automated solutions for partners and clients.
             </p>
             <div className="flex space-x-4">
               <a 

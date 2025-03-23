@@ -54,7 +54,7 @@ const FeaturesPage = () => {
       features: [
         {
           title: 'One-Click Deployments',
-          description: 'Deploy new ERP and ERPNext sites with a single click, eliminating complex manual setup procedures.'
+          description: 'Deploy new ERPNext sites with a single click, eliminating complex manual setup procedures.'
         },
         {
           title: 'Cluster Management',
@@ -131,7 +131,7 @@ const FeaturesPage = () => {
                 Everything You Need for ERP deployment
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Discover how FERP simplifies and enhances your ERP and ERPNext deployments with powerful deployment tools.
+                Discover how FERP simplifies and enhances your ERPNext deployments with powerful deployment tools.
               </p>
               <CustomButton to="/contact" size="lg">
                 Request a Demo
@@ -198,7 +198,7 @@ const FeaturesPage = () => {
                 Ready to Streamline Your ERP Deployments?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Join hundreds of businesses that have simplified their ERP and ERPNext management with FERP.
+                Join hundreds of businesses that have simplified their ERPNext management with FERP.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CustomButton to="/contact" size="lg" variant="primary">

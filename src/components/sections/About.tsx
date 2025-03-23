@@ -103,7 +103,7 @@ const About = () => {
                We’ve got the secret ingredients: ERP Next and Frappe, making everything work like a dream. Plus, we build cool apps for mobile phones and also Team/Slack collaboration tools where everything happens.
             </p>
             <p className="text-muted-foreground mb-6">
-              Today, FERP is used by partners and businesses around the world to deploy, manage, and scale their ERP and ERPNext environments with unprecedented ease and efficiency.
+              Today, FERP is used by partners and businesses around the world to deploy, manage, and scale their ERPNext environments with unprecedented ease and efficiency.
             </p>
             <CustomButton to="/about" variant="outline">
               Learn More About Us

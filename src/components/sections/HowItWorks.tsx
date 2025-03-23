@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import CustomButton from '../ui/CustomButton';
 import { CheckCircle, ArrowRight, Monitor, Database, Server, Globe } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 const HowItWorks = () => {
+  const location = useLocation();
+
   useEffect(() => {
     // Intersection Observer for animations
     const observerOptions = {
@@ -106,17 +109,17 @@ const HowItWorks = () => {
 
             <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Cluster Card */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-2xl"></div>
                 <div className="relative p-6 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center">
                     <Server className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-lg font-bold mb-2">Cluster</h3>
                   <p className="text-sm text-muted-foreground">Infrastructure foundation</p>
                   
                   {/* Popup Info */}
-                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-background border border-border rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-background border border-border rounded-xl hidden">
                     <ul className="text-sm space-y-2">
                       <li className="flex items-center gap-2">
                         <CheckCircle size={12} className="text-primary" />
@@ -135,17 +138,17 @@ const HowItWorks = () => {
               </div>
 
               {/* Bench Card */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-2xl"></div>
                 <div className="relative p-6 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center">
                     <Database className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-lg font-bold mb-2">Bench</h3>
                   <p className="text-sm text-muted-foreground">Application environment</p>
                   
                   {/* Popup Info */}
-                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-background border border-border rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-background border border-border rounded-xl hidden">
                     <ul className="text-sm space-y-2">
                       <li className="flex items-center gap-2">
                         <CheckCircle size={12} className="text-primary" />
@@ -164,17 +167,17 @@ const HowItWorks = () => {
               </div>
 
               {/* Site Card */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-2xl"></div>
                 <div className="relative p-6 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center">
                     <Globe className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-lg font-bold mb-2">Site</h3>
                   <p className="text-sm text-muted-foreground">ERP application</p>
                   
                   {/* Popup Info */}
-                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-background border border-border rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-background border border-border rounded-xl hidden">
                     <ul className="text-sm space-y-2">
                       <li className="flex items-center gap-2">
                         <CheckCircle size={12} className="text-primary" />
@@ -232,11 +235,13 @@ const HowItWorks = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-16 reveal">
-          <CustomButton to="/workflow" size="lg">
-            Learn More About Our Process
-          </CustomButton>
-        </div>
+        {location.pathname !== '/workflow' && (
+          <div className="text-center mt-16 reveal">
+            <CustomButton to="/workflow" size="lg">
+              Learn More About Our Process
+            </CustomButton>
+          </div>
+        )}
       </div>
     </section>
   );

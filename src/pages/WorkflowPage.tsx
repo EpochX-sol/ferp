@@ -105,7 +105,7 @@ const WorkflowPage = () => {
                 How FERP Works
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Discover our streamlined workflow for deploying and managing ERP and ERPNext applications with unprecedented ease.
+                Discover our streamlined workflow for deploying and managing ERPNext applications with unprecedented ease.
               </p>
               <CustomButton to="/contact" size="lg">
                 Schedule a Demo
@@ -196,7 +196,7 @@ const WorkflowPage = () => {
                 Use Cases & Success Stories
               </h2>
               <p className="text-lg text-muted-foreground">
-                See how FERP transforms ERP and ERPNext management for various business scenarios.
+                See how FERP transforms ERPNext management for various business scenarios.
               </p>
             </div>
             
@@ -235,7 +235,7 @@ const WorkflowPage = () => {
                 Ready to Transform Your ERP Deployment Process?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Get started with FERP today and experience the future of ERP and ERPNext deployment.
+                Get started with FERP today and experience the future of ERPNext deployment.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CustomButton to="/contact" size="lg" variant="primary">
