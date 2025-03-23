@@ -58,7 +58,7 @@ const Hero = () => {
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 md:mb-10 max-w-3xl mx-auto">
-            Deploy, manage, and scale ERP and ERPNext sites for partners and clients with our powerful deployment platform.
+            Deploy, manage, and scale ERPNext sites for partners and clients with our powerful deployment platform.
           </p>
           
           {/* CTA Buttons */}
