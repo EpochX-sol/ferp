@@ -35,7 +35,7 @@ const About = () => {
     {
       icon: Lightbulb,
       title: 'Innovation',
-      description: 'We constantly push the boundaries of what\'s possible in ERP deployment automation.'
+      description: 'We constantly push the boundaries of what\'s possible in ERP deployment.'
     },
     {
       icon: Users,
@@ -97,7 +97,7 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Our Story</h3>
             <p className="text-muted-foreground mb-4">
-                We’re a team of wizards in Helsinki Finland, crafting magic with AI to make jobs zoom by fast.
+                We’re a team of wizards in Helsinki Finland and Ethipia, crafting magic with AI to make jobs zoom by fast.
             </p>
             <p className="text-muted-foreground mb-4">
                We’ve got the secret ingredients: ERP Next and Frappe, making everything work like a dream. Plus, we build cool apps for mobile phones and also Team/Slack collaboration tools where everything happens.

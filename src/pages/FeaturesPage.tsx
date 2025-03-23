@@ -128,10 +128,10 @@ const FeaturesPage = () => {
                 Features & Capabilities
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Everything You Need for ERP Automation
+                Everything You Need for ERP deployment
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Discover how FERP simplifies and enhances your ERP and ERPNext deployments with powerful automation tools.
+                Discover how FERP simplifies and enhances your ERP and ERPNext deployments with powerful deployment tools.
               </p>
               <CustomButton to="/contact" size="lg">
                 Request a Demo

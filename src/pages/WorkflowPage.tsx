@@ -55,7 +55,7 @@ const WorkflowPage = () => {
       metrics: [
         '70% reduction in deployment time',
         '60% decrease in infrastructure costs',
-        '95% automation of routine maintenance tasks'
+        '95% deployment of routine maintenance tasks'
       ]
     },
     {
@@ -235,7 +235,7 @@ const WorkflowPage = () => {
                 Ready to Transform Your ERP Deployment Process?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Get started with FERP today and experience the future of ERP and ERPNext automation.
+                Get started with FERP today and experience the future of ERP and ERPNext deployment.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CustomButton to="/contact" size="lg" variant="primary">

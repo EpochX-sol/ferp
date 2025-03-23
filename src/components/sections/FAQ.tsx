@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 import CustomButton from '../ui/CustomButton';
@@ -32,36 +31,36 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is FERP? ",
-      answer: "FERP is a powerful automation platform designed to simplify the deployment, management, and scaling of ERP and ERPNext applications. We offer bench, site, and cluster creation capabilities along with features for migrating, moving, and cloning ERPNext sites."
+      question: "How do I create a new site in FERP?",
+      answer: "Creating a new site is simple: Navigate to the Sites tab, click 'New Site', fill in the site name and admin password, select your target bench, choose the apps to install, and click Create. The system will automatically handle the deployment process."
     },
     {
-      question: "Who can benefit from using FERP?",
-      answer: "FERP serves two main groups: Partners who provide ERP/ERPNext services to their clients and need to manage multiple deployments efficiently, and direct clients who want to deploy and manage their own ERPNext sites with ease."
+      question: "What's the process for creating a new bench?",
+      answer: "To create a new bench: Go to the Bench tab, click 'New Bench', select your target cluster, specify the bench name, configure database host, port, and user credentials. FERP will automatically set up the bench environment with your specified configuration."
     },
     {
-      question: "How does FERP's bench creation work?",
-      answer: "Our bench creation system automates the entire process of setting up a new ERP bench. It handles dependency installation, configuration of environment, Git repository setup, and other complex tasks with just a few clicks, saving you hours of manual setup time."
+      question: "What resources are included in the Site plans?",
+      answer: "Our Site plans come in three tiers: Basic (1GB RAM, 1 CPU, 10GB storage), Professional (2GB RAM, 2 CPUs, 20GB storage), and Enterprise (4GB RAM, 4 CPUs, 40GB storage). Each plan includes automated backups and monitoring features."
     },
     {
-      question: "Can I migrate existing ERPNext sites to FERP?",
-      answer: "Yes! FERP offers seamless migration tools that can move your existing ERPNext sites to our platform with minimal downtime. Our system handles the complex aspects of database migration, file transfers, and configuration adjustments automatically."
+      question: "What's included in the Bench plans?",
+      answer: "Bench plans offer: Basic (up to 3 sites, 4GB RAM, 2 CPUs, 30GB storage), Professional (up to 5 sites, 8GB RAM, 4 CPUs, 50GB storage), and Enterprise (up to 10 sites, 16GB RAM, 8 CPUs, 100GB storage). All plans include monitoring and backup features."
     },
     {
-      question: "How does site cloning work?",
-      answer: "FERP's cloning capability allows you to create exact duplicates of production sites for testing, development, or client demonstration purposes. The process preserves all configurations, installed apps, and can optionally include or exclude production data."
+      question: "What are the Cluster plan specifications?",
+      answer: "Cluster plans provide: Basic (up to 2 benches, 32GB RAM, 8 CPUs, 200GB storage), Professional (up to 5 benches, 64GB RAM, 16 CPUs, 500GB storage), and Enterprise (unlimited benches with custom resource allocation). All include advanced monitoring and management tools."
     },
     {
-      question: "What kind of support does FERP offer?",
-      answer: "We provide tiered support options ranging from standard email support to premium 24/7 assistance. Our team includes ERP experts who understand the complexities of ERPNext deployments and can help resolve any issues quickly."
+      question: "How does the backup system work?",
+      answer: "Our backup system operates automatically based on your plan level. Basic plans include daily backups, Professional plans offer hourly backups, and Enterprise plans provide continuous backup options. All backups are securely stored and easily accessible for restoration when needed."
     },
     {
-      question: "Is FERP secure?",
-      answer: "Absolutely. Security is a top priority at FERP. We implement industry best practices for data encryption, access control, regular security audits, and automated backup systems to ensure your ERP deployments remain secure and compliant."
+      question: "Can I upgrade my plan as my needs grow?",
+      answer: "Yes! You can upgrade between Site, Bench, or Cluster plans at any time. When upgrading, your resources will be automatically adjusted, and you'll only be charged the prorated difference. All your data and configurations will be preserved during the upgrade."
     },
     {
-      question: "How do I get started with FERP?",
-      answer: "Getting started is easy! Simply sign up for an account, choose your plan, and follow our guided setup process. Alternatively, you can request a demo and our team will walk you through the platform's capabilities and how it can be tailored to your specific needs."
+      question: "What monitoring features are available?",
+      answer: "FERP provides comprehensive monitoring including resource usage tracking (CPU, RAM, Storage), application performance metrics, automated health checks, and customizable alerts. Higher-tier plans include more detailed analytics and shorter monitoring intervals."
     }
   ];
 
@@ -76,7 +75,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Find answers to common questions about FERP and our ERP automation platform.
+            Find answers to common questions about FERP and our ERP deployment platform.
           </p>
         </div>
 

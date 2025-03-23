@@ -32,15 +32,23 @@ const Hero = () => {
   return (
     <section id="hero" className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-pattern opacity-40"></div>
-      <div className="absolute right-0 top-20 w-96 h-96 bg-primary/10 rounded-full"></div>
+      <div className="absolute inset-0 bg-pattern opacity-40"></div> 
       <div className="absolute left-0 bottom-20 w-72 h-72 bg-primary/10 rounded-full"></div>
       
+      {/* Added Logo Background */}
+      <div className="absolute right-2 top-24 w-[600px] h-[600px] opacity-20 -z-10 rotate-[-28]">
+        <img 
+          src="/logo1.png" 
+          alt="" 
+          className="h-full w-full object-contain"
+        />
+      </div>
+
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center reveal">
           {/* Eyebrow */}
           <div className="inline-block bg-primary/10 text-primary rounded-full px-4 py-1 text-sm font-medium mb-6">
-            ERP & ERPNext Automation
+            ERP Deployment
           </div>
           
           {/* Heading */}
@@ -50,7 +58,7 @@ const Hero = () => {
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 md:mb-10 max-w-3xl mx-auto">
-            Deploy, manage, and scale ERP and ERPNext sites for partners and clients with our powerful automation platform.
+            Deploy, manage, and scale ERP and ERPNext sites for partners and clients with our powerful deployment platform.
           </p>
           
           {/* CTA Buttons */}
@@ -95,11 +103,11 @@ const Hero = () => {
                     FERP Dashboard
                   </div>
                 </div>
-                <div className="aspect-[16/9] bg-card rounded rounded-t-none overflow-hidden">
+                <div className="aspect-[19/9] bg-card rounded rounded-t-none overflow-hidden">
                   <img 
                     src="/dashboard.jpg" 
                     alt="Ferp Dashboard"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>

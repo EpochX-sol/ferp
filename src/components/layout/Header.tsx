@@ -13,11 +13,9 @@ const Header = () => {
     { name: 'How It Works', path: 'workflow', section: '#how-it-works' },
     { name: 'Pricing', path: 'pricing', section: '#pricing' },
     { name: 'About', path: 'about', section: '#about' },
-    { name: 'Contact', path: 'contact', section: '#contact' },
-    // { name: 'FAQ', path: 'faq', section: '#faq' }, 
+    { name: 'Contact', path: 'contact', section: '#contact' }, 
   ];
-
-  // Handle scroll effect
+ 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
@@ -30,12 +28,10 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  // Handle navigation to sections
+ 
   const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, section: string) => {
     e.preventDefault();
-    
-    // Check if we're on the home page
+     
     if (section.startsWith('#')) {
       const element = document.querySelector(section);
       if (element) {
@@ -44,15 +40,13 @@ const Header = () => {
           behavior: 'smooth'
         });
       }
-    } else {
-      // If on another page, navigate to home page with hash
+    } else { 
       window.location.href = `/${section}`;
     }
     
     setIsMenuOpen(false);
   };
-
-  // Close menu when route changes
+ 
   useEffect(() => {
     setIsMenuOpen(false);
   }, [location]);
@@ -71,12 +65,13 @@ const Header = () => {
           <Link 
             to="/" 
             className="flex items-center space-x-2"
-            aria-label="FERP logo"
+            aria-label="Fineto logo"
           >
-            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-              <span className="text-white font-bold">F</span>
-            </div>
-            <span className="text-xl font-medium">FERP</span>
+            <img 
+              src="/logo2.webp" 
+              alt="FERP Logo" 
+              className="w-32 h-16 object-contain"
+            /> 
           </Link>
 
           {/* Desktop Navigation */}

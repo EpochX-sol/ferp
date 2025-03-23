@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <img 
-                src="/logo.jpg" 
+                src="/logo1.png" 
                 alt="FERP Logo" 
                 className="h-10 w-auto object-contain"
               />
@@ -88,18 +88,6 @@ const Footer = () => {
           <div>
             <h4 className="text-base font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
-              {/* <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Documentation</a>
-              </li> */}
-              {/* <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">API Reference</a>
-              </li> */}
-              {/* <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Blog</a>
-              </li> */}
-              {/* <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Tutorials</a>
-              </li> */}
               <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a>
               </li>
@@ -144,7 +132,7 @@ const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-              &copy; {currentYear} FERP. All rights reserved.
+              &copy; {currentYear} Fineto. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -152,10 +140,7 @@ const Footer = () => {
               </Link>
               <Link to="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Terms of Service
-              </Link>
-              <Link to="/cookies" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Cookie Policy
-              </Link>
+              </Link> 
             </div>
           </div>
         </div>
