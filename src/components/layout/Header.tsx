@@ -77,10 +77,9 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigationLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.path}
-                onClick={(e) => handleNavigation(e, link.path)}
+                to={`/${link.path}`}
                 className={`text-sm font-medium transition-all duration-200 hover:text-primary cursor-pointer ${
                   location.pathname === `/${link.path}`
                     ? 'text-primary'
@@ -88,15 +87,14 @@ const Header = () => {
                 }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* CTA Button (Desktop) */}
           <div className="hidden md:block">
             <Link
-              to="#contact"
-              onClick={(e) => handleNavigation(e, "#contact")}
+              to="/#contact"
               className="bg-primary text-white px-6 py-2 rounded-full button-animation"
             >
               Get Started
@@ -119,10 +117,9 @@ const Header = () => {
           <div className="fixed inset-0 top-[60px] bg-background z-50 md:hidden animate-fade-in">
             <nav className="flex flex-col h-full pt-6 px-6">
               {navigationLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.section}
-                  onClick={(e) => handleNavigation(e, link.section)}
+                  to={`/${link.path}`}
                   className={`py-4 text-lg font-medium border-b border-border ${
                     location.pathname === `/${link.path}`
                       ? 'text-primary'
@@ -130,12 +127,11 @@ const Header = () => {
                   }`}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
               <div className="mt-8">
                 <Link
-                  to="#contact"
-                  onClick={(e) => handleNavigation(e, "#contact")}
+                  to="/#contact"
                   className="block text-center bg-primary text-white px-6 py-3 rounded-full w-full button-animation"
                 >
                   Get Started
